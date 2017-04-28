@@ -135,15 +135,6 @@ export default {
   "rating": 4,
   "reviews": 2
 }, {
-  "id": 16,
-  "name": "Temp",
-  "description": "LDR Brachytherapy of Trachea using Palladium 103",
-  "price": "$29.93",
-  "imgUrl": "/images/g3.jpg",
-  "category": "engine",
-  "rating": 5,
-  "reviews": 3
-}, {
   "id": 17,
   "name": "Aerified",
   "description": "Revision of Spacer in L Finger Phalanx Jt, Extern Approach",
@@ -171,24 +162,6 @@ export default {
   "rating": 5,
   "reviews": 2
 }, {
-  "id": 20,
-  "name": "Latlux",
-  "description": "Excision of Left Kidney, Percutaneous Endoscopic Approach",
-  "price": "$34.48",
-  "imgUrl": "/images/g7.jpg",
-  "category": "engine",
-  "rating": 2,
-  "reviews": 2
-}, {
-  "id": 21,
-  "name": "Flowdesk",
-  "description": "Revision of Drain Dev in L Metacarpophal Jt, Open Approach",
-  "price": "$21.31",
-  "imgUrl": "/images/g8.jpg",
-  "category": "engine",
-  "rating": 3,
-  "reviews": 2
-}, {
   "id": 22,
   "name": "Tresom",
   "description": "Dilate of L Low Lobe Bronc with Intralum Dev, Perc Approach",
@@ -197,15 +170,6 @@ export default {
   "category": "engine",
   "rating": 4,
   "reviews": 2
-}, {
-  "id": 23,
-  "name": "Voyatouch",
-  "description": "Removal of Synth Sub from R Pleural Cav, Perc Endo Approach",
-  "price": "$90.33",
-  "imgUrl": "/images/g10.jpg",
-  "category": "engine",
-  "rating": 2,
-  "reviews": 5
 }, {
   "id": 24,
   "name": "Solarbreeze",
@@ -251,22 +215,5 @@ export default {
   "category": "headlights",
   "rating": 5,
   "reviews": 3
-}, {
-  "id": 29,
-  "name": "Fintone",
-  "description": "Beam Radiation using Photons 1 - 10 MeV",
-  "price": "$26.56",
-  "imgUrl": "/images/t6.jpg",
-  "category": "tires",
-  "rating": 5,
-  "reviews": 5
-}, {
-  "id": 30,
-  "name": "Stim",
-  "description": "Ultrasonography of Right Lower Extremity Veins, Guidance",
-  "price": "$47.57",
-  "imgUrl": "/images/t7.jpg",
-  "category": "tires",
-  "rating": 2,
-  "reviews": 1
-}]};
+}
+]};
