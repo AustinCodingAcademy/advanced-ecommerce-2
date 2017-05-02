@@ -4,7 +4,7 @@ import App from "./App";
 import "./index.css";
 import state from "./state";
 
-var currentCategory = "tires";
+let currentCategory = "tires";
 
 function changeCategory(category) {
   currentCategory = category;

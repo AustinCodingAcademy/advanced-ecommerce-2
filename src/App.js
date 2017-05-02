@@ -9,7 +9,7 @@ import TopNav from "./components/TopNav";
 
 
 
-function App(props) {
+function App(props, currentCategory) {
 
 	let products = props.state.products;
 
