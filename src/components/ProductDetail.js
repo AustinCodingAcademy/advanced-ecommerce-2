@@ -11,3 +11,5 @@ function ProductDetail(props) {
         </div>
     )
 }
+
+export default ProductDetail;

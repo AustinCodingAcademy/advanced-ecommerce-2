@@ -18,3 +18,5 @@ function SubHeader() {
         </div>
     )
 }
+
+export default SubHeader;

@@ -16,3 +16,5 @@ function TopNav() {
 		
     )
 }
+
+export default TopNav;
