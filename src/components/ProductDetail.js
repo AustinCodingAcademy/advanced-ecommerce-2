@@ -14,7 +14,7 @@ function ProductDetail(props) {
 }
 
 ProductDetail.propTypes = {
-  products: PropTypes.array.isRequired
+  product: PropTypes.object.isRequired
 };
 
 export default ProductDetail;
