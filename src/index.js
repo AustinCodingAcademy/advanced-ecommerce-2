@@ -11,7 +11,7 @@ function changeCategory(category){
    console.log(category);
    currentCategory = category;
 
-   filteredProducts = filteredProducts.filter(product =>{
+   filteredProducts = state.products.filter(product =>{
      return product.category === category;
    })
 
