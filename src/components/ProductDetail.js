@@ -1,5 +1,4 @@
 import React from "react";
-import state from "../state"
 
 function ProductDetail(props) {
   let product = props.products
