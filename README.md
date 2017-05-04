@@ -8,7 +8,7 @@ Fork, Clone, yarn install, yarn start
   * ImageSlider - look for div with className of "image-slider"
   * ProductDetail - look for div with className of "grid_1_of_5"
     * Use PropTypes to require a prop "product"
-    * Use product prop to populate the UI instead of hard coded 
+    * Use product prop to populate the UI instead of hard coded
   * SubHeader - look for div with className of "sub-header"
   * TopNav - look for div with className of "top-nav"
 * Make sure to import and use all these components back in App
@@ -21,3 +21,5 @@ Fork, Clone, yarn install, yarn start
   * Remove existing href and replace with "#"
   * Register onClick for the links, make sure to use arrow function. Make sure to preventDefault.
   * In the arrow function call props.changeCategory("tires"). Send in the category that is appropriate for the link
+
+Leslie Robertson
