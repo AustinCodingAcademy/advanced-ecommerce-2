@@ -9,7 +9,7 @@ var currentCategory = "tires";
 
 function render() {
   ReactDOM.render(
-    <App state={state} />,
+    <App state={state} changeCategory={changeCategory} currentCategory={currentCategory}/>,
     document.getElementById("root")
   );
 }
@@ -20,5 +20,5 @@ function changeCategory(category) {
   render();
 }
 
-export default changeCategory;
+
 
