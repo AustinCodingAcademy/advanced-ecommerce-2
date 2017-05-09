@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 function ProductDetail(props) {
   return (
     <div className="grid_1_of_5 images_1_of_5">
-            <img src="images/g3.png" />
+            <img src={props.product.imgUrl} />
             <h3>{props.product.name}</h3>
             <p>{props.product.descripton}</p>
             <h4>{props.product.price}</h4>
