@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ImageSlider from "./components/ImageSlider";
 
 function App(props) {
   return (
@@ -10,16 +11,8 @@ function App(props) {
         <Header />
 
 				
-			
-        <div className="image-slider">
-				
-          <ul className="rslides" id="slider1">
-            <li><img src="images/slider1.jpg" alt="" /></li>
-            <li><img src="images/slider3.jpg" alt="" /></li>
-            <li><img src="images/slider1.jpg" alt="" /></li>
-          </ul>
-					
-        </div>
+				{/*Image-Slider  */}
+        <ImageSlider />
 				
         <div className="content">
           <div className="products-box">
