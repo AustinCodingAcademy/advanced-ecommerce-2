@@ -3,21 +3,41 @@ import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ImageSlider from "./components/ImageSlider";
+import ProductDetail from "./components/ProductDetail";
+
+
+
+
 
 function App(props) {
+  
+  function prodFilter() {
+    let selProd =	props.state.products.filter(prod => prod.category === props.currentCategory)
+      .map((prod) => { 
+        return (
+          <ProductDetail key={prod.id} imgUrl={prod.imgUrl} name={prod.name} 
+            description={prod.description} 
+            price={prod.price} />);
+      });
+    return selProd;
+  }
+  
+  
+  
   return (
     <div className="App">
       <div className="wrap">
-        <Header />
+        <Header changeCategory={props.changeCategory} />
 
 				
-				{/*Image-Slider  */}
+        {/* Image-Slider  */}
         <ImageSlider />
 				
         <div className="content">
           <div className="products-box">
             <div className="products">
               <h5><span>FEATURED</span> PRODUCTS</h5>
+              {prodFilter()}
               <div className="section group">
                 <div className="grid_1_of_5 images_1_of_5">
                   <img src="images/g3.png" />
@@ -99,7 +119,7 @@ function App(props) {
           </div>
         </div>
         <div className="clear" />
-				{/*footer  */}
+        {/* footer  */}
         <Footer />
       </div>
 	
