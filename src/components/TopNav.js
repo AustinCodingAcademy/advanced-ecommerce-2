@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 export default function TopNav(props) {
   function onClick(e) {
@@ -21,3 +22,6 @@ export default function TopNav(props) {
   );
 }
 
+TopNav.propTypes = {
+  changeCategory: PropTypes.func.isRequired
+};

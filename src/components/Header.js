@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import TopNav from "./TopNav";
 import SubHeader from "./SubHeader";
 
@@ -31,14 +32,17 @@ export default function Header(props) {
      
       <div className="clear" />
      
-      {/*sub-header  */}
+      { /* sub-header  */}
       <SubHeader />
      
       <div className="clear" />
-     {/*topnav  */}
+      {/* topnav  */}
       <TopNav changeCategory={props.changeCategory} />
     </div>
   );
 }
 
+Header.propTypes = {
+  changeCategory: PropTypes.func.isRequired
+};
 

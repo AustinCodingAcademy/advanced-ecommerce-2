@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -12,7 +13,7 @@ import ProductDetail from "./components/ProductDetail";
 function App(props) {
   
   function prodFilter() {
-    let selProd =	props.state.products.filter(prod => prod.category === props.currentCategory)
+    const selProd =	props.state.products.filter(prod => prod.category === props.currentCategory)
       .map((prod) => { 
         return (
           <ProductDetail key={prod.id} imgUrl={prod.imgUrl} name={prod.name} 
@@ -127,4 +128,8 @@ function App(props) {
   );
 }
 
+App.propTypes = {
+  state: PropTypes.array.isRequired,
+  changeCategory: PropTypes.func.isRequired,
+};
 export default App;
