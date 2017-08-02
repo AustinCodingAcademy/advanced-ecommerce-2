@@ -3,19 +3,15 @@ import React from 'react';
 
 function TopNav(props) {
 
-  function changeIt(e) {
-    e.preventDefault();
-    props.changeCategory('headlights');
-  }
-
+  // returns clicked category to changeCategory (index.js)
   return(
     <ul>
-      <li><a onClick={changeIt} href="#">car lights</a></li>
-      <li><a href="#">Car wheels</a></li>
-      <li><a href="#">car bumpers</a></li>
-      <li><a href="#">car audiosystem</a></li>
-      <li><a href="#">Truck bumpers</a></li>
-      <li><a href="#">Feedback</a></li>
+      <li><a onClick={ () => props.changeCategory('headlights') } href="#">Car lights</a></li>
+      <li><a onClick={ () => props.changeCategory('tires') } href="#">Car wheels</a></li>
+      <li><a onClick={ () => props.changeCategory('bumpers') } href="#">Car bumpers</a></li>
+      <li><a onClick={ () => props.changeCategory('audio') } href="#">Car audiosystem</a></li>
+      <li><a onClick={ () => props.changeCategory('bumpers') } href="#">Truck bumpers</a></li>
+      <li><a onClick={ () => props.changeCategory('headlights') } href="#">Feedback</a></li>
       <div className="clear"> </div>
     </ul>
 

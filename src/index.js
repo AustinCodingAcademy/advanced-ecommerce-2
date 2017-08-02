@@ -5,8 +5,9 @@ import "./index.css";
 import state from "./state";
 
 
-const currentCategory = 'tires';
+var currentCategory = 'tires';
 
+// When a user clicks category from TopNav, only filtered items show (currentCategory)
 function changeCategory(category) {
   currentCategory = category;
   render();

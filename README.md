@@ -20,4 +20,4 @@ Fork, Clone, yarn install, yarn start
 * Modify TopNav
   * xRemove existing href and replace with "#"
   * xRegister onClick for the links, make sure to use arrow function. Make sure to preventDefault.
-  * In the arrow function call props.changeCategory("tires"). Send in the category that is appropriate for the link
+  * xIn the arrow function call props.changeCategory("tires"). Send in the category that is appropriate for the link

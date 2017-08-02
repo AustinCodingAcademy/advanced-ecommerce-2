@@ -8,81 +8,78 @@ import SubHeader from './components/SubHeader.js';
 import TopNav from './components/TopNav.js';
 
 
-
 function App(props) {
 
+  // inCat filters currentCategory items selected by user
   const inCat = props.state.products.filter((p) => {
     return p.category === props.currentCategory;
     // return (<ProductDetail product={p} key={p.id}/>);  --This is wrong
   })
 
+  // productDiv shows filtered items
   const productDiv = inCat.map((p) => {
     return <ProductDetail product={p} key={p.id}/>
   })
 
-  // const productDiv = props.state.products.map((p) => {
-  //   return <ProductDetail product={p} key={p.id}/>
-  // })
-
   return (
     <div className="App">
-      	<div className="wrap">
 
-		<div className="header">
+      <div className="wrap">
+		    <div className="header">
+          <Header />
+		      <div className="clear"> </div>
+		      <div className="sub-header">
+			      <SubHeader />
 
-    <Header />
+			      <div className="sub-header-right">
+              <ul>
+      					<li><a href="#">log in</a></li>
+      					<li><a href="#">Your account</a></li>
+      					<li><a href="#">CART: (EMPTY)
+                  <img src="images/cart.png" title="cart" alt="" /></a>
+                </li>
+      				</ul>
+				      <input type="text" /><input type="submit"  value="search" />
+			      </div>
 
-		<div className="clear"> </div>
-		<div className="sub-header">
+			      <div className="clear"> </div>
+		      </div>
 
-			<SubHeader />
+		      <div className="clear"> </div>
+	        <div className="top-nav">
+			      <TopNav
+              changeCategory={props.changeCategory}
+              currentCategory={props.currentCategory} />
+		      </div>
 
-			<div className="sub-header-right">
-				<ul>
-					<li><a href="#">log in</a></li>
-					<li><a href="#">Your account</a></li>
-					<li><a href="#">CART: (EMPTY) <img src="images/cart.png" title="cart" alt="" /></a></li>
-				</ul>
-				<input type="text" /><input type="submit"  value="search" />
-			</div>
-			<div className="clear"> </div>
-		</div>
-		<div className="clear"> </div>
-		<div className="top-nav">
-
-			<TopNav changeCategory={props.changeCategory} currentCategory={props.currentCategory}/>
-
-		</div>
-
-		</div>
-
+		    </div>
 
 				<ImageSlider />
 
-			<div className="content">
-				<div className="products-box">
-				<div className="products">
-					<h5><span>FEATURED</span> PRODUCTS</h5>
-					<div className="section group">
+			  <div className="content">
+				  <div className="products-box">
 
-          {productDiv}
+            <div className="products">
+					    <h5><span>FEATURED</span> PRODUCTS</h5>
+					    <div className="section group">
+                {productDiv}
+					    </div>
+				    </div>
 
-					</div>
-				</div>
-				<div className="products products-secondbox">
-					<h5><span>Our</span> Specials</h5>
-					<div className="section group">
+  				  <div className="products products-secondbox">
+  					  <h5><span>Our</span> Specials</h5>
+  					  <div className="section group">
+  						  {productDiv}
+                {/* Not sure if we are to list the list again? */ }
+  					  </div>
+  				  </div>
 
-						{productDiv}
-{/* Not sure if we are to list the list again? */ }
+			    </div>
+		    </div>
 
-					</div>
-				</div>
-			</div>
-		</div>
-		<div className="clear"> </div>
-		<Footer />
-	</div>
+		    <div className="clear"> </div>
+		    <Footer />
+      </div>
 
     </div>
   );

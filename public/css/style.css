@@ -195,7 +195,7 @@ body{
 }
 .grid_1_of_5:first-child {
 	 margin-left: 0;
-} 
+}
 .images_1_of_5 {
 	width: 18.72%;
 	padding:0 0 1.5% 0;
@@ -219,7 +219,8 @@ body{
 	font-size:0.8125em;
 	color: #989898;
 	line-height: 1.6em;
-	font-family : verdana, arial, helvetica, helve, sans-serif; 	
+	font-family : verdana, arial, helvetica, helve, sans-serif;
+  height: 8.5em;	
 }
 .images_1_of_5 h4{
 	font-size: 0.8125em;
@@ -257,18 +258,18 @@ body{
 @media only screen and (max-width: 1024px) {
 	.wrap{
 		width:90%;
-	}	
+	}
 }
 
 /*  GO FULL WIDTH AT LESS THAN 640 PIXELS */
 @media only screen and (max-width: 640px){
-	
+
 	.wrap{
 		width:95%;
 	}
-	.grid_1_of_5{ 
+	.grid_1_of_5{
 		margin: 2% 0 2% 0%;
-	}	
+	}
 	.images_1_of_5 {
 		width:94%;
 		padding:3%;
@@ -278,13 +279,13 @@ body{
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
 @media only screen and (max-width: 480px) {
-	
+
 	.wrap{
 		width:95%;
 	}
-	.grid_1_of_5{ 
+	.grid_1_of_5{
 		margin: 2% 0 2% 0%;
-	}	
+	}
 	.images_1_of_5 {
 		width:92%;
 		padding:4%;
@@ -333,10 +334,10 @@ body{
 	margin: 1% 0 1% 1.6%;
 }
 .col_1_of_4:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
-	
+
 .span_1_of_4 {
 	width: 20.8%;
-	padding:1.5%; 
+	padding:1.5%;
 }
 .span_1_of_4  h3{
 	display: block;
@@ -352,26 +353,26 @@ body{
 	padding:0.5em 0;
 	color: #333;
 	line-height: 1.5em;
-	font-family :verdana, arial, helvetica, helve, sans-serif; 	 
+	font-family :verdana, arial, helvetica, helve, sans-serif;
 }
 
 /***** Media Quries *****/
 @media only screen and (max-width: 1024px) {
 	.wrap{
 		width:95%;
-	}	
+	}
 }
 /*  GO FULL WIDTH AT LESS THAN 640 PIXELS */
 @media only screen and (max-width: 640px) and (min-width: 480px) {
 	.wrap{
 		width:95%;
 	}
-	.col_1_of_4{ 
+	.col_1_of_4{
 		margin: 1% 0 1% 0%;
 	}
 	.span_1_of_4 {
 		width:94%;
-		padding:3%;  
+		padding:3%;
 	}
 }
 
@@ -380,12 +381,12 @@ body{
 	.wrap{
 		width:95%;
 	}
-	.col_1_of_4{ 
+	.col_1_of_4{
 		margin: 1% 0 1% 0%;
 	}
 	.span_1_of_4 {
 		width:92%;
-		padding:4%; 
+		padding:4%;
 	}
 }
 /*----copy-right-----*/
@@ -558,14 +559,14 @@ body{
 }
 .col:first-child{
 	margin-left:0;
-}	
+}
 .span_2_of_3 {
 	width: 63.1%;
-	padding:1.5%; 
+	padding:1.5%;
 }
 .span_1_of_3 {
 	width: 29.2%;
-	padding:1.5%; 
+	padding:1.5%;
 }
 .span_2_of_3  h3,
 .span_1_of_3  h3 {
@@ -609,7 +610,7 @@ body{
 }
 .contact-form textarea{
 		resize:none;
-		height:120px;		
+		height:120px;
 }
 .contact-form input[type="submit"]{
 	padding: 8px 10px;
@@ -662,7 +663,7 @@ body{
 @media only screen and (max-width: 1024px) {
 	.wrap{
 		width:95%;
-	}	
+	}
 }
 /*  GO FULL WIDTH AT LESS THAN 800 PIXELS */
 
@@ -672,14 +673,14 @@ body{
 	}
 	.span_2_of_3 {
 		width:94%;
-		padding:3%; 
+		padding:3%;
 	}
-	.col{ 
+	.col{
 		margin: 1% 0 1% 0%;
 	}
 	.span_1_of_3 {
 		width:94%;
-		padding:3%; 
+		padding:3%;
 	}
 }
 
@@ -691,16 +692,16 @@ body{
 	}
 	.span_2_of_3 {
 		width:94%;
-		padding:3%; 
+		padding:3%;
 	}
-	.col{ 
+	.col{
 		margin: 1% 0 1% 0%;
 	}
 	.span_1_of_3 {
 		width:94%;
-		padding:3%; 
+		padding:3%;
 	}
-   
+
    .contact-form input[type="text"],.contact-form textarea{
 		width:97%;
 	}
@@ -713,14 +714,14 @@ body{
 	}
 	.span_2_of_3 {
 		width:90%;
-		padding:5%; 
+		padding:5%;
 	}
-	.col { 
+	.col {
 		margin: 1% 0 1% 0%;
 	}
 	.span_1_of_3 {
 		width:90%;
-		padding:5%; 
+		padding:5%;
 	}
 	.contact-form input[type="text"],.contact-form textarea{
 		width:92%;
@@ -764,17 +765,17 @@ body{
 /*----zoomer----*/
 .clearfix:after{clear:both;content:".";display:block;font-size:0;height:0;line-height:0;visibility:hidden;}
 		.clearfix{display:block;zoom:1}
-		
-		
+
+
 		ul#thumblist{display:block;}
 		ul#thumblist li{float:left;margin-right:2px;list-style:none;width: 30.8%;}
 		ul#thumblist li a{display:block;border:1px solid #CCC;}
 		ul#thumblist li a.zoomThumbActive{
 		    border:1px solid red;
 		}
-		
+
 		.jqzoom{
-		
+
 			text-decoration:none;
 			float:left;
 		}
@@ -952,11 +953,11 @@ body{
 	color: #000;
 	font-family: 'Fauna One', serif;
 	font-weight: normal;
-	padding:0px 5px 0 0;	
+	padding:0px 5px 0 0;
 }
 .product-share {
 	padding: 21px 0px;
-}	
+}
 /*----responsive design----*/
 @media only screen and (max-width: 1366px) and (min-width: 1280px) {
 	.wrap{
