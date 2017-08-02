@@ -1,14 +1,14 @@
 ### Setup
 Fork, Clone, yarn install, yarn start
 
-### Do
+### Do  
 * Take the html out of the App component and put in separate components
   * Header - look for div with a className of "top-header"
   * Footer - look for div with a className of "footer"
   * ImageSlider - look for div with className of "image-slider"
   * ProductDetail - look for div with className of "grid_1_of_5"
     * Use PropTypes to require a prop "product"
-    * Use product prop to populate the UI instead of hard coded 
+    * Use product prop to populate the UI instead of hard coded
   * SubHeader - look for div with className of "sub-header"
   * TopNav - look for div with className of "top-nav"
 * Make sure to import and use all these components back in App
