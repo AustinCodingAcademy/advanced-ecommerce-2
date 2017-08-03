@@ -8,12 +8,47 @@ function TopNav(props) {
   return (
     <div className="top-nav">
       <ul>
-        <li><a href="#" onClick={handleClick}>car lights</a></li>
-        <li><a href="#" onClick={handleClick}>Car wheels</a></li>
-        <li><a href="#" onClick={handleClick}>car bumpers</a></li>
-        <li><a href="#" onClick={handleClick}>car audiosystem</a></li>
-        <li><a href="#" onClick={handleClick}>Truck bumpers</a></li>
-        <li><a href="#" onClick={handleClick}>Feedback</a></li>
+        <li><a href="#" onClick={
+            () => {
+            event.preventDefault();
+            props.changeCategory("headlights")
+          }
+        }>car lights</a></li>
+
+        <li><a href="#" onClick={
+          () => {
+          event.preventDefault();
+          props.changeCategory("tires")
+        }
+          }>Car wheels</a></li>
+
+        <li><a href="#" onClick={
+          () => {
+          event.preventDefault();
+          props.changeCategory("bumpers")
+        }
+          }>car bumpers</a></li>
+
+        <li><a href="#" onClick={
+          () => {
+          event.preventDefault();
+          props.changeCategory("audio")
+        }
+          }>car audiosystem</a></li>
+
+        <li><a href="#" onClick={
+          () => {
+          event.preventDefault();
+          props.changeCategory("bumpers")
+        }
+          }>Truck bumpers</a></li>
+
+        <li><a href="#" onClick={
+          () => {
+          event.preventDefault();
+          return props.changeCategory("engine")
+        }
+          }>Feedback</a></li>
         <div className="clear"> </div>
       </ul>
     </div>

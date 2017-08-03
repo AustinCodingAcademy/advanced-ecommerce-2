@@ -11,7 +11,7 @@ import PropTypes from "prop-types";
 function App(props) {
 
   const productDivs= props.state.products.filter(product => {
-    return product.category = props.currentCategory;
+    return product.category === props.currentCategory;
   }).map(product => {
     return <ProductDetail key={product.id} product={product}/>
   });
