@@ -6,32 +6,64 @@ import ImageSlider from "./components/ImageSlider";
 import SubHeader from "./components/SubHeader";
 import TopNav from "./components/TopNav";
 import ProductDetail from "./components/ProductDetail";
+import PropTypes from "prop-types";
 
 function App(props) {
-    return (
-      <div className="App">
-        	<div className="wrap">
 
-			<div className="header">
+  const productDivs= props.state.products.filter(product => {
+    return product.category = props.currentCategory;
+  }).map(product => {
+    return <ProductDetail key={product.id} product={product}/>
+  });
 
-			<Header />
-			<div className="clear"> </div>
-			<SubHeader />
-			<div className="clear"> </div>
-			<TopNav />
+  return (
+    <div className="App">
+      <div className="wrap">
+        <div className="header">
 
-			</div>
+          <Header />
+
+        <div className="clear"> </div>
+
+          <SubHeader />
+
+          <div className="clear"> </div>
+
+          <TopNav changeCategory={props.changeCategory}/>
+
+        </div>
+
+        <ImageSlider />
+
+        <div className="content">
+          <div className="products-box">
+            <div className="products">
+              <h5>
+                <span>FEATURED</span> PRODUCTS
+              </h5>
+              <div className="section group">
+
+                {productDivs}
+
+              </div>
+            </div>
+          </div>
+        </div>
 
 
-			<ImageSlider />
-      <ProductDetail />
 
-			<div className="clear"> </div>
-			<Footer />
-		</div>
+        <div className="clear"> </div>
+
+        <Footer />
 
       </div>
-    );
+    </div>
+  );
 }
+
+App.propTypes = {
+  state: PropTypes.object.isRequired,
+  changeCategory: PropTypes.func.isRequired,
+};
 
 export default App;
