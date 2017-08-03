@@ -14,7 +14,11 @@ function changeCategory(category) {
 
 function render() {
   ReactDOM.render(
-    <App state={state} />,
+    <App
+      state={state}
+      currentCategory={currentCategory}
+      changeCategory={(category) => changeCategory(category)}
+      />,
     document.getElementById("root")
   );
 }

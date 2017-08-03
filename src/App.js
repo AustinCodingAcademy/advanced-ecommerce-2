@@ -8,6 +8,22 @@ import SubHeader from "./components/SubHeader.js";
 import TopNav from "./components/TopNav.js";
 
 function App(props) {
+
+
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //   }
+  // }
+
+
+  const filterCategory = props.state.products.filter((c) => {
+    return props.currentCategory === c.category;
+  });
+
+  const log = (category) => {
+    console.log(category);
+  }
     return (
       <div className="App">
         	<div className="wrap">
@@ -19,7 +35,7 @@ function App(props) {
 			<SubHeader />
 			<div className="clear"> </div>
 			<TopNav
-        changeCategory={props.changeCategory}
+        changeCategory={(category) => props.changeCategory(category)}
       />
 
 			</div>
@@ -32,11 +48,11 @@ function App(props) {
 					<div className="products">
 						<h5><span>FEATURED</span> PRODUCTS</h5>
 						<div className="section group">
-            {props.state.products.map(product =>  {
-              for (let i = 14; i <= 18; i++) {
+
+            {filterCategory.map(product =>  {
                   return(<ProductDetail key={product.id} product={product} />);
                 }
-                })
+                )
             }
 						</div>
 					</div>
@@ -87,6 +103,7 @@ function App(props) {
 			</div>
 		</div>
     );
+
 }
 
 export default App;
