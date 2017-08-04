@@ -1,6 +1,7 @@
 import React from "react";
 
 function TopNav(props) {
+
     return (
         <div className="top-nav">
             <ul>
@@ -8,11 +9,11 @@ function TopNav(props) {
                     (e) => {
                         e.preventDefault();
                         props.changeCategory("headlights");
-                    }}>car lights</a></li>
+                    }}>Car lights</a></li>
                 <li><a href="#" onClick={
                     (e) => {
                         e.preventDefault();
-                        props.changeCategory("audio");
+                        props.changeCategory("tires");
                     }}>Car wheels</a></li>
                 <li><a href="#" onClick={
                     (e) => {
