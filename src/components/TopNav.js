@@ -16,9 +16,6 @@ function TopNav(props) {
         <li><a href="#"
           onClick={() => props.changeCategory("audio")}>Audio Systems</a>
         </li>
-        <li><a href="#"
-          onClick={() => props.changeCategory("feedback")}>Feedback</a>
-        </li>
         <div className="clear"> </div>
       </ul>
     </div>
