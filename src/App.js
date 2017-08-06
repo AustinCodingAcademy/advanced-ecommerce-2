@@ -8,18 +8,19 @@ import TopNav from "./components/TopNav";
 import "./App.css";
 import index from "./index.js";
 
-var cats = [];
 function App(props) {
+
 	var categories = props.state.products.filter((product) => {
-		return product.category === props.currentCategory;
-	});
+		return 	product.category === props.currentCategory
+	}
+);
 
 
 		var categoryMap = categories.map((product) => {
-			return (
-				<ProductDetail key={product.id} product={product} />
-)
-		});
+			return <ProductDetail key={product.id} product={product} />
+
+		}
+	);
 
 
 	// mapfunction I think goes here refer to address book listofusers
@@ -28,7 +29,7 @@ function App(props) {
       <div className="App">
         	<div className="wrap">
 			<div className="header">
-        <Header />
+        <Header changeCategory={props.changeCategory}/>
 				<div className="clear"> </div>
 			</div>
 			<SubHeader />
@@ -43,10 +44,11 @@ function App(props) {
 						create ProductDetail components */}
 					<div className="products">
 						<h5><span>FEATURED</span> PRODUCTS</h5>
-						<div className="section group"></div>
+						<div className="section group">
+							{categoryMap}
+						</div>
 					</div>
-					<ProductDetail />
-					{categoryMap}
+					
 				</div>
 			</div>
 			<div className="clear"> </div>

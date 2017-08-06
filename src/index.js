@@ -5,9 +5,10 @@ import "./index.css";
 import state from "./state";
 
 
-var currentCategory = [];
+var currentCategory = "tires";
 function changeCategory(category) {
-  return currentCategory.push(category);
+  currentCategory = category;///cannot use strict equals here that was a problem earlier
+  render();
 }
 
 function render() {
