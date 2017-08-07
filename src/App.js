@@ -10,11 +10,12 @@ import TopNav from "./components/TopNav";
 function App(props) {
     // const product = props.state.products[0];
 
-  const filteredProducts = props.state.products.filter((category) => {
-    return props.currentCategory
+  const filteredProducts = props.state.products.filter((item) => {
+    return item.category === props.currentCategory
   }).map((product) => {
     return <ProductDetail product={product} key={product.id} />
   });
+
 
     return (
       <div className="App">
@@ -26,7 +27,8 @@ function App(props) {
 			<SubHeader />
 
 			<div className="clear"> </div>
-			<TopNav />
+      // this is the piece I was missing that passes changeCategory thru to TopNav
+			<TopNav changeCategory={props.changeCategory} />
 
 			</div>
 					<ImageSlider />
