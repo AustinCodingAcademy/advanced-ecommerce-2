@@ -8,7 +8,13 @@ import SubHeader from "./components/SubHeader";
 import TopNav from "./components/TopNav";
 
 function App(props) {
-    const product = props.state.products[0];
+    // const product = props.state.products[0];
+
+  const filteredProducts = props.state.products.filter((category) => {
+    return props.currentCategory
+  }).map((product) => {
+    return <ProductDetail product={product} key={product.id} />
+  });
 
     return (
       <div className="App">
@@ -30,35 +36,8 @@ function App(props) {
 					<div className="products">
 						<h5><span>FEATURED</span> PRODUCTS</h5>
 						<div className="section group">
-							<ProductDetail product={product} />
-							<div className="grid_1_of_5 images_1_of_5">
-								 <img src="images/g1.jpg" />
-								 <h3>Lorem Ipsum is simply </h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, in reprehenderit.</p>
-								<h4>$300.00</h4>
-							     <div className="button"><span><a href="singlepage.html">Read More</a></span></div>
-						    </div>
-							<div className="grid_1_of_5 images_1_of_5">
-								<img src="images/g2.jpg" />
-								 <h3>Lorem Ipsum is simply </h3>
-								 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, in reprehenderit.</p>
-								 <h4>$120.00</h4>
-							     <div className="button"><span><a href="singlepage.html">Read More</a></span></div>
-							</div>
-							<div className="grid_1_of_5 images_1_of_5">
-								 <img src="images/g3.png" />
-								 <h3>Lorem Ipsum is simply </h3>
-								 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, in reprehenderit.</p>
-								 <h4>$500.00</h4>
-							     <div className="button"><span><a href="singlepage.html">Read More</a></span></div>
-							</div>
-							<div className="grid_1_of_5 images_1_of_5">
-								 <img src="images/g4.jpg" />
-								 <h3>Lorem Ipsum is simply</h3>
-								 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, in reprehenderit.</p>
-								 <h4>$120.00</h4>
-							     <div className="button"><span><a href="singlepage.html">Read More</a></span></div>
-							</div>
+						  {filteredProducts}
+
 						</div>
 					</div>
 					<div className="products products-secondbox">
