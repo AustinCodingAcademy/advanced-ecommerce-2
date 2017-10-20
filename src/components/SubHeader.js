@@ -14,7 +14,7 @@ function SubHeader() {
         </ul>
         <input type="text" /><input type="submit" value="search" />
       </div>
-      <div className="clear"> </div>
+      <div className="clear" />
     </div>
 
   );

@@ -31,13 +31,13 @@ X Modify TopNav
   X Register onClick for the links, make sure to use arrow function. X Make sure to preventDefault.
   X In the arrow function call props.changeCategory("tires"). Send in the category that is appropriate for the link
 
-  X UPDATE / IN PROGRESS
+--> UPDATE / IN PROGRESS
     --> 'Feedback' link unchanged, brings user to contact.html
     --> Contact.html top nav updated to visually match TopNav
     --> Clicking other top nav links from contact.html page brings
         user back to local host starting point (displaying tires)
 
-        OPPORTUNITIES
+        --> OPPORTUNITIES
           1. Have actual landing page display ALL prods, no filters, before
               specific top nav link selected
           2. Update/react-ify contact.html with props to display TopNav component
