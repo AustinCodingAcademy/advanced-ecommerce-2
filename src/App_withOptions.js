@@ -9,23 +9,54 @@ import "./App.css";
 
 function App(props) {
   const filteredDivs = props.state.products.filter((product) => {
+    console.log(product.category);
     return product.category === props.currentCategory;
   });
+
+/*
+function App(props) {
+  const filteredDivs = props.state.products.filter((product, i) => {
+    console.log(props.state.products[i].category);
+    return props.state.products[i].category === props.currentCategory;
+  });
+  */
 
   const filteredDivs1 = filteredDivs.slice(0,5);
   const filteredDivs2 = filteredDivs.slice(5);
 
   const productDivs1 = filteredDivs1.map((product) => {
+    console.log(product);
+    console.log(product.id);
     return (
       <ProductDetail key={product.id} product={product} />
     );
   });
 
   const productDivs2 = filteredDivs2.map((product) => {
+    console.log(product);
+    console.log(product.id);
     return (
       <ProductDetail key={product.id} product={product} />
     );
   });
+
+  /*
+
+  const productDivs1 = filteredDivs1.map((product, i) => {
+    console.log(filteredDivs1[i]);
+    return (
+      <ProductDetail key={filteredDivs1[i].id} product={product} />
+    );
+  });
+
+  const productDivs2 = filteredDivs2.map((product, i) => {
+    console.log(filteredDivs2[i]);
+    return (
+      <ProductDetail key={filteredDivs2[i].id} product={product} />
+    );
+  });
+
+  */
 
   return (
     <div className="App">
