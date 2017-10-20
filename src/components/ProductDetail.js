@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 
 function ProductDetail(props) {
   return (
@@ -12,5 +12,9 @@ function ProductDetail(props) {
     </div>
   );
 }
+
+ProductDetail.propTypes = {
+  product: React.PropTypes.object.isRequired
+};
 
 export default ProductDetail;
