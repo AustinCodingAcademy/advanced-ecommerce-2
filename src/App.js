@@ -8,9 +8,21 @@ import TopNav from './components/TopNav.js';
 import ProductDetail from './components/ProductDetail.js';
 
 function App(props) {
-  const productProps = props.state.products.map((product, idx) => {
-    return <ProductDetail product={product} index = {idx} />;
-  });
+
+  // const productDisplay = props.state.product
+  //   .filter(
+  //     (product) => props.currentCategory === ''
+  //   )
+
+
+const productProps  = props.state.products
+  .filter(
+    (product) => product.category === props.currentCategory? true: false
+  )
+  .map(
+    (product, idx) => <ProductDetail product={product} key = {idx} />
+  )
+
 
   // const handleCategoryChange = productProps.filter((catgeory) => {
   //   if(productProps.category === )

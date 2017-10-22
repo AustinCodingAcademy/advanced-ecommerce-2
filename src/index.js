@@ -8,7 +8,7 @@ let currentCategory = 'tires';
 
 const changeCategory = (category) => {
   currentCategory = category;
-  render;
+  render();
 }
 
 function render() {
