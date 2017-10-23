@@ -9,9 +9,13 @@ import SubHeader from './components/Sub-Header.js';
 
 function App(props) {
 
+		var filteredproducts = props.products.filter(function(product){
+			return product.category === props.currentCategory;
+		})
+
 		var productdisplay=[];
-		for (var i = 0; i < props.products.length; i++) {
-			productdisplay.push(<ProductDetail product={props.products[i]}></ProductDetail>);
+		for (var i = 0; i < filteredproducts.length; i++) {
+			productdisplay.push(<ProductDetail product={filteredproducts[i]}></ProductDetail>);
 		   }
 		   
     return (
@@ -25,7 +29,7 @@ function App(props) {
 			<div className="clear"> </div>
 			<SubHeader />
 			<div className="clear"> </div>
-			<TopNav />
+			<TopNav changeCategory={props.changeCategory}/>
 		
 			</div>
 			
