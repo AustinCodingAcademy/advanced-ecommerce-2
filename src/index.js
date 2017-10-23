@@ -6,7 +6,7 @@ import state from "./state";
 
 var currentCategory = 'tires';
 function changeCategory(category) {
-  currentCateogry = category;
+  currentCategory = category;
   render
 };
 

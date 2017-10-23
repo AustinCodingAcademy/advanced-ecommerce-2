@@ -1,6 +1,6 @@
 import React from "react";
 
-function TopNav() {
+function TopNav(props) {
     return(
     <div className="top-nav">
     <ul>
@@ -33,7 +33,7 @@ function TopNav() {
                 a.preventDefault();
                 props.changeCategory("bump=ers");
             }}>Truck Bumpers</a></li>
-            
+
         <li><a href="contact.html">Feedback</a></li>
      
         <div className="clear"> </div>
