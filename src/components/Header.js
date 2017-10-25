@@ -1,4 +1,6 @@
 import React from "react";
+import SubHeader from "./SubHeader";
+import TopNav from "./TopNav";
 
 function Header() {
   return (
@@ -27,32 +29,12 @@ function Header() {
 				<div className="clear"> </div>
 			</div>
 			<div className="clear"> </div>
-			<div className="sub-header">
-				<div className="logo">
-					<a href="index.html"><img src="images/logo.png" title="logo" /></a>
-				</div>
-				<div className="sub-header-right">
-					<ul>
-						<li><a href="#">log in</a></li>
-						<li><a href="#">Your account</a></li>
-						<li><a href="#">CART: (EMPTY) <img src="images/cart.png" title="cart" /></a></li>
-					</ul>
-					<input type="text" /><input type="submit"  value="search" />
-				</div>
-				<div className="clear"> </div>
-			</div>
+
+			<SubHeader />
+
 			<div className="clear"> </div>
-			<div className="top-nav">
-				<ul>
-					<li><a href="carlights.html">car lights</a></li>
-					<li><a href="carwheels.html">Car wheels</a></li>
-					<li><a href="carbumpers.html">car bumpers</a></li>
-					<li><a href="caradsystem.html">car audiosystem</a></li>
-					<li><a href="truckbumpers.html">Truck bumpers</a></li>
-					<li><a href="contact.html">Feedback</a></li>
-					<div className="clear"> </div>
-				</ul>
-			</div>
+
+      <TopNav />
 
 		</div>);
 }
