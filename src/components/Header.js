@@ -1,6 +1,4 @@
 import React from "react";
-import SubHeader from "./SubHeader";
-import TopNav from "./TopNav";
 
 function Header() {
   return (
@@ -30,11 +28,6 @@ function Header() {
 			</div>
 			<div className="clear"> </div>
 
-			<SubHeader />
-
-			<div className="clear"> </div>
-
-      <TopNav />
 
 		</div>);
 }
