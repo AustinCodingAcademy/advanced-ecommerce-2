@@ -1,14 +1,20 @@
 import React from "react";
 import "./App.css";
+import ProductDetail from './components/ProductDetail';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import ImageSlider from './components/ImageSlider';
+import SubHeader from './components/SubHeader';
+import TopNav from './components/TopNav';
 
 function App(props) {
     return (
       <div className="App">
         	<div className="wrap">
-	
+
 			<div className="header">
-	
-			<div className="top-header">
+
+			{/* <div className="top-header">
 				<div className="top-header-left">
 					<ul>
 						<li className="active"><a href="#">Home</a></li>
@@ -30,9 +36,10 @@ function App(props) {
 					</ul>
 				</div>
 				<div className="clear"> </div>
-			</div>
+			</div> */}
+      <Header />
 			<div className="clear"> </div>
-			<div className="sub-header">
+			{/* <div className="sub-header">
 				<div className="logo">
 					<a href="index.html"><img src="images/logo.png" title="logo" /></a>
 				</div>
@@ -45,9 +52,10 @@ function App(props) {
 					<input type="text" /><input type="submit"  value="search" />
 				</div>
 				<div className="clear"> </div>
-			</div>
+			</div> */}
+      <SubHeader />
 			<div className="clear"> </div>
-			<div className="top-nav">
+			{/* <div className="top-nav">
 				<ul>
 					<li><a href="carlights.html">car lights</a></li>
 					<li><a href="carwheels.html">Car wheels</a></li>
@@ -57,27 +65,30 @@ function App(props) {
 					<li><a href="contact.html">Feedback</a></li>
 					<div className="clear"> </div>
 				</ul>
+			</div> */}
+      <TopNav />
+
 			</div>
-		
-			</div>
-			
-		
-					<div className="image-slider">
-				
+
+
+					{/* <div className="image-slider">
+
 					    <ul className="rslides" id="slider1">
 					      <li><img src="images/slider1.jpg" alt="" /></li>
 					      <li><img src="images/slider3.jpg" alt="" /></li>
 					      <li><img src="images/slider1.jpg" alt="" /></li>
 					    </ul>
-					
-					</div>
-				
+
+					</div> */}
+      <ImageSlider />
+
 				<div className="content">
 					<div className="products-box">
 					<div className="products">
 						<h5><span>FEATURED</span> PRODUCTS</h5>
 						<div className="section group">
-							<div className="grid_1_of_5 images_1_of_5">
+      <ProductDetail />
+							{/* <div className="grid_1_of_5 images_1_of_5">
 								 <img src="images/g3.png" />
 								 <h3>Lorem Ipsum is simply </h3>
 								 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, in reprehenderit.</p>
@@ -151,13 +162,14 @@ function App(props) {
 								 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, in reprehenderit.</p>
 								 <h4><span>$700.00</span>$602.00</h4>
 							     <div className="button"><span><a href="singlepage.html">Read More</a></span></div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>
 			</div>
 			<div className="clear"> </div>
-			<div className="footer">
+    <Footer />
+			{/* <div className="footer">
 				<div className="section group">
 				<div className="col_1_of_4 span_1_of_4">
 					<h3>INFORMATION</h3>
@@ -200,9 +212,9 @@ function App(props) {
 					<p>Design by <a href="#">W3layouts</a></p>
 				</div>
 			</div>
-			</div>
+			</div> */}
 		</div>
-	
+
       </div>
     );
 }
