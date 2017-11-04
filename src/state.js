@@ -1,5 +1,5 @@
 export default {
-  products:[{
+  product:[{
   "id": 1,
   "name": "Namfix",
   "description": "Extraction of Nasal Turbinate, Open Approach",
