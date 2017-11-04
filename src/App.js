@@ -8,8 +8,9 @@ import TopNav from "./components/TopNav";
 import ProductDetails from "./components/ProductDetails";
 
 
-function App(props) {
 
+function App(props) {
+	//REVISIT MAP AND FILTER HMWK
 	const productCards  = props.state.product
 		.filter((product) => product.category === props.currentCategory? true: false)
 		.map((product, i) => <ProductDetails product={product} key = {i} />)
