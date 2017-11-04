@@ -5,10 +5,15 @@ import Footer from "./components/Footer";
 import ImageSlider from "./components/ImageSlider";
 import SubHeader from "./components/SubHeader";
 import TopNav from "./components/TopNav";
-import ProductDetails from "./components/ProductDetail";
+import ProductDetails from "./components/ProductDetails";
 
 
 function App(props) {
+
+	const productCards  = props.state.product
+		.filter((product) => product.category === props.currentCategory? true: false)
+		.map((product, i) => <ProductDetails product={product} key = {i} />)
+
     return (
       <div className="App">
         <div className="wrap">
@@ -19,10 +24,10 @@ function App(props) {
 			
 			</div>
 			<div className="clear"> </div>
-				<SubHeader />
+			<SubHeader />
 			<div className="clear"> </div>
 			
-			<TopNav />
+			<TopNav changeCategory = {props.changeCategory}/>
 		
 		</div>
 			
@@ -34,8 +39,7 @@ function App(props) {
 						<h5><span>FEATURED</span> PRODUCTS</h5>
 						<div className="section group">
 
-							<ProductDetails product={props.product}/>
-							
+							{productCards}	
 							
 						</div>
 					</div>
@@ -86,7 +90,7 @@ function App(props) {
 				<Footer />
 
 			</div>
-		
+
 	//removed </div>'s from here...
       
     );
