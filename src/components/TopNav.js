@@ -3,8 +3,7 @@ import React from "react";
 function TopNav(props) {
 
   function handleClick(event) {
-    // event.preventDefault();
-    console.log(event.target.id);
+    event.preventDefault();
     props.changeCategory(event.target.id);
   }
 
@@ -15,7 +14,7 @@ function TopNav(props) {
       categories.map(
         (ele, ind) => {
           return (
-            <li><p href="#" key={ind} id={ele} onClick={(e) => handleClick(e)}>{ele}</p></li>
+            <li><a href="#" key={ind} id={ele} onClick={(e) => handleClick(e)}>{ele}</a></li>
           );
         })
     );
