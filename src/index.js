@@ -5,10 +5,10 @@ import "./index.css";
 import state from "./state";
 
 function render() {
-  ReactDOM.render(
-    <App state={state} />,
-    document.getElementById("root")
-  );
+    ReactDOM.render(
+        <App state={state} />,
+        document.getElementById("root")
+    );
 }
 render();
 
