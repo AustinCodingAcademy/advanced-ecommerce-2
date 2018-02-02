@@ -1,4 +1,5 @@
 export default {
+  currentCat: "tires",
   products:[{
   "id": 1,
   "name": "Namfix",
@@ -139,7 +140,7 @@ export default {
   "name": "Temp",
   "description": "LDR Brachytherapy of Trachea using Palladium 103",
   "price": "$29.93",
-  "imgUrl": "/images/g3.jpg",
+  "imgUrl": "/images/g3.png",
   "category": "engine",
   "rating": 5,
   "reviews": 3
@@ -175,7 +176,7 @@ export default {
   "name": "Latlux",
   "description": "Excision of Left Kidney, Percutaneous Endoscopic Approach",
   "price": "$34.48",
-  "imgUrl": "/images/g7.jpg",
+  "imgUrl": "/images/g7.png",
   "category": "engine",
   "rating": 2,
   "reviews": 2
@@ -184,7 +185,7 @@ export default {
   "name": "Flowdesk",
   "description": "Revision of Drain Dev in L Metacarpophal Jt, Open Approach",
   "price": "$21.31",
-  "imgUrl": "/images/g8.jpg",
+  "imgUrl": "/images/g8.png",
   "category": "engine",
   "rating": 3,
   "reviews": 2
