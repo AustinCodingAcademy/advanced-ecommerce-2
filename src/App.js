@@ -24,7 +24,7 @@ function App(props) {
   let prodDetails = filterProducts.map((product)=> {
     //console.log("Product (map input):",product);
     //console.log("App props.state:",props.state);
-    return <ProductDetail key={product.id} state={props.state} prod={product} />;
+    return <ProductDetail className="grid_1_of_5 images_1_of_5" key={product.id} state={props.state} prod={product} />;
   });
 
     return (

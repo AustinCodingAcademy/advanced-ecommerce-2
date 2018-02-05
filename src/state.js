@@ -1,4 +1,5 @@
 export default {
+  currentCategory: "tires",
   products:[{
   "id": 1,
   "name": "Namfix",
