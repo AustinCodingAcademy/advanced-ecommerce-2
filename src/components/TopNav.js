@@ -4,7 +4,10 @@ import TopNavItem from "./TopNavItem";
 function TopNav(props) {
 
     let navItemMarkup = props.navItems.map(function(item){
-        return <TopNavItem slug={item.slug} name={item.name} key={item.id} changeCategory={props.changeCategory} />
+        
+        let navClass = (props.currentCategory === item.slug) ? 'current' : '';
+
+        return <TopNavItem slug={item.slug} name={item.name} key={item.id} changeCategory={props.changeCategory} navClass={navClass} />
     });
 
     return (<div className="top-nav  px3">

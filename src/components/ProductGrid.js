@@ -4,7 +4,7 @@ import ProductDetail from './ProductDetail';
 function ProductGrid(props) {
 
     let currentProducts = props.products.filter(function(product){
-        return (product.category === props.category);
+        return (product.category === props.currentCategory);
     });
 
     let prodDetails = currentProducts.map(function(product){

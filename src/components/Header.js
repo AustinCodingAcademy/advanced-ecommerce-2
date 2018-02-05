@@ -9,7 +9,7 @@ function Header(props) {
     return (<div className="header bg-blue">
         <GlobalHeader />
         <SubHeader cartCount={props.cartCount} />
-        <TopNav navItems={props.navItems} changeCategory={props.changeCategory} />
+        <TopNav navItems={props.navItems} currentCategory={props.currentCategory} changeCategory={props.changeCategory} />
     </div>);
 }
 

@@ -17,12 +17,8 @@ export default {
     "name": "Car audiosystem"
   }, {
     "id": 4,
-    "slug": "bumpers",
+    "slug": "truck-bumpers",
     "name": "Truck bumpers"
-  }, {
-    "id": 5,
-    "slug": "contact",
-    "name": "Feedback"
   }],
 
   products:[{
@@ -103,7 +99,7 @@ export default {
     "description": "Drainage of Right Lower Lung Lobe, Via Opening",
     "price": "$57.59",
      "imgUrl": "/images/b4.jpg",
-    "category": "bumpers",
+    "category": "truck-bumpers",
     "rating": 2,
     "reviews": 4
   }, {
@@ -112,7 +108,7 @@ export default {
     "description": "Removal of Infusion Device from Mediastinum, Open Approach",
     "price": "$89.68",
      "imgUrl": "/images/b5.jpg",
-    "category": "bumpers",
+    "category": "truck-bumpers",
     "rating": 2,
     "reviews": 1
   }, {
