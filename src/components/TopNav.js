@@ -1,28 +1,39 @@
 import React from "react";
 
 function TopNav(props) {
+
+  function noHash(e){
+    e.preventDefault();
+    alert("hi");
+  }
+
   return (
 
     <div className="top-nav">
       <ul>
-        <li><a href="#" onClick={()=>{
-          props.changeCategory("headlights");
-        }}>Car Lights</a></li>
+        <li><a href="#" onClick={//()=>{
+          //props.changeCategory("headlights");
+          noHash
+        }>Car Lights</a></li>
 
         <li><a href="#" onClick={()=>{
           props.changeCategory("tires");
+          noHash;
         }}>Car Wheels</a></li>
 
         <li><a href="#" onClick={()=>{
           props.changeCategory("bumpers");
+          noHash;
         }}>Car Bumpers</a></li>
 
         <li><a href="#" onClick={()=>{
           props.changeCategory("audio");
+          noHash;
         }}>Car Audiosystem</a></li>
 
         <li><a href="#" onClick={()=>{
           props.changeCategory("bumpers");
+          noHash;
         }}>Truck Bumpers</a></li>
 
         <li><a href="contact.html">Feedback</a></li>

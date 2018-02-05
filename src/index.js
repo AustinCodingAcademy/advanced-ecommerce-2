@@ -19,4 +19,5 @@ function render() {
     document.getElementById("root")
   );
 }
+
 render();
