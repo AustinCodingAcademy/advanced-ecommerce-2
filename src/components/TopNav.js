@@ -1,15 +1,16 @@
 import React from "react";
+import TopNavItem from "./TopNavItem";
 
-function TopNav() {
+function TopNav(props) {
+
+    let navItemMarkup = props.navItems.map(function(item){
+        return <TopNavItem slug={item.slug} name={item.name} key={item.id} changeCategory={props.changeCategory} />
+    });
+
     return (<div className="top-nav  px3">
         <div className="max-width-4 mx-auto bg-black">
             <ul className="list-reset m0">
-                <li className="inline-block"><a className="btn btn-primary fz2 py3 bg-clear h-bg-black-lighten-2" href="carlights.html">car lights</a></li>
-                <li className="inline-block"><a className="btn btn-primary fz2 py3 bg-clear h-bg-black-lighten-2" href="carwheels.html">Car wheels</a></li>
-                <li className="inline-block"><a className="btn btn-primary fz2 py3 bg-clear h-bg-black-lighten-2" href="carbumpers.html">car bumpers</a></li>
-                <li className="inline-block"><a className="btn btn-primary fz2 py3 bg-clear h-bg-black-lighten-2" href="caradsystem.html">car audiosystem</a></li>
-                <li className="inline-block"><a className="btn btn-primary fz2 py3 bg-clear h-bg-black-lighten-2" href="truckbumpers.html">Truck bumpers</a></li>
-                <li className="inline-block"><a className="btn btn-primary fz2 py3 bg-clear h-bg-black-lighten-2" href="contact.html">Feedback</a></li>
+                {navItemMarkup}
             </ul>
         </div>
     </div>);

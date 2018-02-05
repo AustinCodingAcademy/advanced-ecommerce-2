@@ -10,9 +10,9 @@ function App(props) {
     return (
       <div className="App">
     
-        <Header />
+        <Header navItems={props.navItems} changeCategory={props.changeCategory} cartCount={props.cartCount} />
         
-        <ProductGrid products={props.state.products} />
+        <ProductGrid products={props.products} category={props.currentCategory} increaseCartCount={props.increaseCartCount} />
     
         <ImageSlider />
         
