@@ -1,6 +1,6 @@
 import React from "react";
 
-function TopNav(){
+function TopNav(props, changeCategory){
     return(
         <div className="top-nav">
         <ul>
@@ -14,6 +14,7 @@ function TopNav(){
         </ul>
     </div>
     );
+    
 }
 
 export default TopNav;
