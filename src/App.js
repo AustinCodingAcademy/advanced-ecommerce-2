@@ -7,8 +7,8 @@ import ProductDetail from "./components/ProductDetail";
 import TopNav from "./components/TopNav";
 import SubHeader from "./components/SubHeader";
 
-function App(props, changeCategory) {
-	//console.log(currentCategory); 
+function App(props) {
+	console.log(props.currentCategory); 
     return (
       <div className="App">
         	<div className="wrap">
@@ -19,7 +19,7 @@ function App(props, changeCategory) {
 			<div className="clear"> </div>
 			<SubHeader />
 			<div className="clear"> </div>
-			<TopNav changeCategory={changeCategory} />
+			<TopNav changeCategory={props.changeCategory}/>
 		
 			</div>
 			

@@ -1,6 +1,6 @@
 import React from "react";
 
-function TopNav(props, changeCategory){
+function TopNav(props){
     return(
         <div className="top-nav">
         <ul>
