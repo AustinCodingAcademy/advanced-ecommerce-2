@@ -4,11 +4,24 @@ import App from "./App";
 import "./index.css";
 import state from "./state";
 
-function render() {
+
+let currentCategory = "tires";
+
+
+let categoryFilter = (currentCategory) => {
+  return state.products.filter(state.products.category === currentCategory);
+}
+
+function changeCategory(category){
+  
+    currentCategory = category
+    render(category)
+}
+
+function render(props) {
   ReactDOM.render(
-    <App state={state} />,
+    <App changeCategory={changeCategory} product={state.products} currentCategory={currentCategory}/>,
     document.getElementById("root")
   );
 }
 render();
-
