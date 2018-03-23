@@ -17,4 +17,6 @@ function TopNav(props){
     
 }
 
+//const categoryFilter = props.products.filter(props.products.category);
+
 export default TopNav;

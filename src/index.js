@@ -7,13 +7,15 @@ import state from "./state";
 
 let currentCategory = "tires";
 
+
+let categoryFilter = (currentCategory) => {
+  return state.products.filter(state.products.category === currentCategory);
+}
+
 function changeCategory(category){
   
     currentCategory = category
-  ReactDOM.render(
-    <App changeCategory={changeCategory} product={state.products} currentCategory={currentCategory}/>,
-    document.getElementById("root")
-  ); 
+    render(category)
 }
 
 function render(props) {
