@@ -94,7 +94,7 @@
         "no-catch-shadow": 0,
         "no-class-assign": 2,
         "no-cond-assign": 2,
-        "no-console": 1,
+        "no-console": 0,
         "no-const-assign": 2,
         "no-constant-condition": 2,
         "no-continue": 0,
@@ -194,7 +194,7 @@
         "prefer-reflect": 0,
         "prefer-spread": 0,
         "quote-props": [2, "as-needed"],
-        "quotes": [2, "double"],
+        // "quotes": [2, "double"],
         "radix": 2,
         "require-yield": 2,
         "semi": [2, "always"],
@@ -233,6 +233,6 @@
         "react/jsx-indent-props": [2, 2],
         "react/jsx-uses-react": 2,
         "react/jsx-uses-vars": 2,
-        "react/self-closing-comp": 2
+        "react/self-closing-comp": 0
     }
 }
