@@ -1,7 +1,16 @@
 import React from "react";
+import GlobalHeader from "./GlobalHeader";
+import SubHeader from "./SubHeader";
+import TopNav from "./TopNav";
 
-function Header() {
-  return (<div />);
+function Header(props) {
+    
+
+    return (<div className="header bg-blue">
+        <GlobalHeader />
+        <SubHeader cartCount={props.cartCount} />
+        <TopNav navItems={props.navItems} currentCategory={props.currentCategory} changeCategory={props.changeCategory} />
+    </div>);
 }
 
 export default Header;
