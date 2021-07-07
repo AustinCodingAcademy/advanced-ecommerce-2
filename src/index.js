@@ -5,10 +5,21 @@ import "./index.css";
 import state from "./state";
 
 function render() {
+
+  let currentCategory = "tires"
+
+  const changeCategory = (category) => {
+    currentCategory = category;
+    render();
+  }
+
   ReactDOM.render(
-    <App state={state} />,
+    <App
+    changeCategory={changeCategory}
+    state={state}
+    currentCategory={currentCategory}
+    />,
     document.getElementById("root")
   );
 }
 render();
-
